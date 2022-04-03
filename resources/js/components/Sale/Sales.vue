@@ -26,8 +26,8 @@
                 <td>{{ sale.sale_date }}</td>
                 <td>{{ sale.customer }}</td>
                 <td class="text-center">{{ sale.product }}</td>
-                <td class="text-center">{{ sale.price }}</td>
                 <td class="text-center">{{ sale.quantity }}</td>
+                <td class="text-center">{{ sale.price }}</td>
                 <td class="text-center">{{ sale.price * sale.quantity }}</td>
                 <td>
                     <div class="btn-group text-center" role="group">

@@ -30871,11 +30871,11 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("td", { staticClass: "text-center" }, [
-              _vm._v(_vm._s(sale.price)),
+              _vm._v(_vm._s(sale.quantity)),
             ]),
             _vm._v(" "),
             _c("td", { staticClass: "text-center" }, [
-              _vm._v(_vm._s(sale.quantity)),
+              _vm._v(_vm._s(sale.price)),
             ]),
             _vm._v(" "),
             _c("td", { staticClass: "text-center" }, [
