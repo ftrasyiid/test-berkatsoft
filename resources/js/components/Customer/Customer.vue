@@ -24,7 +24,7 @@
                         <label for="address">Alamat</label>
                         <input id="address" name="address" max="255" class="form-control" v-model="customer.address"/>
                     </div>
-                    <div>
+                    <div class="my-2">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Update Customer</button>
                     </div>
                 </form>

@@ -13,7 +13,7 @@
                         <input type="number" id="price" name="price" class="form-control" v-model="product.price">
                     </div>
                     <div class="form-group">
-                        <label for="weight">Berat Produk</label>
+                        <label for="weight">Berat Produk (gram)</label>
                         <input type="number" id="weight" name="weight" class="form-control" v-model="product.weight">
                     </div>
                     <div class="form-group">

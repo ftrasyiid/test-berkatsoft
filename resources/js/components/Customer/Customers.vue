@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3 class="text-center">Customer List</h3><br/>
-        <div class="text-end">
+        <div class="text-end my-2">
             <router-link :to="{name: 'customer_add'}" class="btn btn-success">Add Customer</router-link>
         </div>
         <table class="table table-bordered">

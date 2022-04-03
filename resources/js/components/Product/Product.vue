@@ -13,14 +13,14 @@
                         <input type="number" id="price" name="price" class="form-control" v-model="product.price">
                     </div>
                     <div class="form-group">
-                        <label for="weight">Berat Produk</label>
+                        <label for="weight">Berat Produk (gram)</label>
                         <input type="number" id="weight" name="weight" class="form-control" v-model="product.weight">
                     </div>
                     <div class="form-group">
                         <label for="characteristic">Karakteristik</label>
                         <input id="characteristic" name="characteristic" max="255" class="form-control" v-model="product.characteristic"/>
                     </div>
-                    <div>
+                    <div class="my-2">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Update Product</button>
                     </div>
                 </form>

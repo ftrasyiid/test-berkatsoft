@@ -24,7 +24,7 @@
                         <label for="quantity">Jumlah</label>
                         <input type="number" id="quantity" name="quantity" min="0" step="1" class="form-control" v-model="sale.quantity"/>
                     </div>
-                    <div>
+                    <div class="my-2">
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Add Sale Order</button>
                     </div>
                 </form>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3 class="text-center">Daftar Produk</h3><br/>
-        <div class="text-end">
+        <div class="text-end my-2">
             <router-link :to="{name: 'sale_add'}" class="btn btn-success">Add Sale Order</router-link>
         </div>
         <table class="table table-bordered">

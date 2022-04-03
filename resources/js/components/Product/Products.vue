@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3 class="text-center">Daftar Produk</h3><br/>
-        <div class="text-end">
+        <div class="text-end my-2">
             <router-link :to="{name: 'product_add'}" class="btn btn-success">Add Product</router-link>
         </div>
         <table class="table table-bordered">
@@ -10,7 +10,7 @@
                 <th>ID</th>
                 <th>Nama</th>
                 <th class="text-center">Harga</th>
-                <th class="text-center">Berat</th>
+                <th class="text-center">Berat (gram)</th>
                 <th>Karakteristik</th>
                 <th>Aksi</th>
             </tr>

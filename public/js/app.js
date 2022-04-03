@@ -29462,7 +29462,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "my-2" }, [
       _c(
         "button",
         {
@@ -29691,7 +29691,7 @@ var render = function () {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "text-end" },
+      { staticClass: "text-end my-2" },
       [
         _c(
           "router-link",
@@ -29729,7 +29729,10 @@ var render = function () {
             _c("td", [
               _c(
                 "div",
-                { staticClass: "btn-group", attrs: { role: "group" } },
+                {
+                  staticClass: "btn-group text-center",
+                  attrs: { role: "group" },
+                },
                 [
                   _c(
                     "router-link",
@@ -29966,7 +29969,7 @@ var render = function () {
             _vm._v(" "),
             _c("div", { staticClass: "form-group" }, [
               _c("label", { attrs: { for: "weight" } }, [
-                _vm._v("Berat Produk"),
+                _vm._v("Berat Produk (gram)"),
               ]),
               _vm._v(" "),
               _c("input", {
@@ -30036,7 +30039,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "my-2" }, [
       _c(
         "button",
         {
@@ -30140,7 +30143,7 @@ var render = function () {
             _vm._v(" "),
             _c("div", { staticClass: "form-group" }, [
               _c("label", { attrs: { for: "weight" } }, [
-                _vm._v("Berat Produk"),
+                _vm._v("Berat Produk (gram)"),
               ]),
               _vm._v(" "),
               _c("input", {
@@ -30250,7 +30253,7 @@ var render = function () {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "text-end" },
+      { staticClass: "text-end my-2" },
       [
         _c(
           "router-link",
@@ -30288,7 +30291,10 @@ var render = function () {
             _c("td", [
               _c(
                 "div",
-                { staticClass: "btn-group", attrs: { role: "group" } },
+                {
+                  staticClass: "btn-group text-center",
+                  attrs: { role: "group" },
+                },
                 [
                   _c(
                     "router-link",
@@ -30337,7 +30343,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", { staticClass: "text-center" }, [_vm._v("Harga")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-center" }, [_vm._v("Berat")]),
+        _c("th", { staticClass: "text-center" }, [_vm._v("Berat (gram)")]),
         _vm._v(" "),
         _c("th", [_vm._v("Karakteristik")]),
         _vm._v(" "),
@@ -30793,7 +30799,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "my-2" }, [
       _c(
         "button",
         {
@@ -30833,7 +30839,7 @@ var render = function () {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "text-end" },
+      { staticClass: "text-end my-2" },
       [
         _c(
           "router-link",
@@ -30879,7 +30885,10 @@ var render = function () {
             _c("td", [
               _c(
                 "div",
-                { staticClass: "btn-group", attrs: { role: "group" } },
+                {
+                  staticClass: "btn-group text-center",
+                  attrs: { role: "group" },
+                },
                 [
                   _c(
                     "router-link",
