@@ -3,7 +3,7 @@
         <div class="text-center" style="margin: 20px 0px 20px 0px;">
             <span class="text-secondary">BerkatSoft - Febri</span>
         </div>
- 
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
@@ -15,7 +15,7 @@
         </nav>
     </div>
 </template>
- 
+
 <script>
     export default {}
 </script>

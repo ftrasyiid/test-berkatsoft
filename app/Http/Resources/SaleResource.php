@@ -20,7 +20,9 @@ class SaleResource extends JsonResource
             'customer_id' => $this->customer_id,
             'product' => $this->item->name,
             'product_id' => $this->product_id,
-            'date' => $this->sale_date
+            'sale_date' => $this->sale_date,
+            'price' => $this->item->price,
+            'quantity' => $this->quantity
         ];
     }
 }

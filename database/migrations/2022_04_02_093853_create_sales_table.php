@@ -18,6 +18,7 @@ class CreateSalesTable extends Migration
             $table->bigInteger('customer_id', false, true);
             $table->bigInteger('product_id', false, true);
             $table->date('sale_date');
+            $table->integer('quantity', false, true);
             $table->timestamps();
 
             $table->foreign('customer_id')->references('id')->on('customers');
