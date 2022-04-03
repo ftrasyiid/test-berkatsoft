@@ -21,6 +21,7 @@ class Sale extends Model
         $this->customer_id = $saleData['customer_id'];
         $this->product_id = $saleData['product_id'];
         $this->sale_date = $saleData['sale_date'];
+        $this->quantity = $saleData['quantity'];
         return $this->save()? $this->id: false;
     }
 
@@ -29,6 +30,7 @@ class Sale extends Model
         $sale->customer_id = $saleData['customer_id'];
         $sale->product_id = $saleData['product_id'];
         $sale->sale_date = $saleData['sale_date'];
+        $sale->quantity = $saleData['quantity'];
         return $sale->save()? $sale->id: false;
     }
 

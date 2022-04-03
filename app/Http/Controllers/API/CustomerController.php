@@ -59,9 +59,10 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show(int $id)
     {
-        //
+        $customer = $this->customer->getCustomer($id);
+        return $customer;
     }
 
     /**

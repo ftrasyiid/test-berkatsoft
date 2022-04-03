@@ -46,7 +46,8 @@ class SaleController extends Controller
         $saleData = $this->validate($request, [
             'customer_id' => ['required', 'integer'],
             'product_id' => ['required', 'integer'],
-            'sale_date' => ['required', 'date']
+            'sale_date' => ['required', 'date'],
+            'quantity' => ['required', 'integer'],
         ]);
 
         return $this->sale->setSale($saleData);
@@ -57,9 +58,10 @@ class SaleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show(int $id)
     {
-        //
+        $sale = $this->sale->getSale($id);
+        return $sale;
     }
 
     /**
@@ -83,7 +85,8 @@ class SaleController extends Controller
         $saleData = $this->validate($request, [
             'customer_id' => ['required', 'integer'],
             'product_id' => ['required', 'integer'],
-            'sale_date' => ['required', 'date']
+            'sale_date' => ['required', 'date'],
+            'quantity' => ['required', 'integer'],
         ]);
 
         return $this->sale->updateSale($id, $saleData);

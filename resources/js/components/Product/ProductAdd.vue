@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h3 class="text-center">Edit Product</h3>
+        <h3 class="text-center">Add Product</h3>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form @submit.prevent="updateProduct">
+                <form @submit.prevent="addProduct">
                     <div class="form-group">
                         <label for="name">Nama Produk</label>
                         <input type="text" id="name" name="name" class="form-control" v-model="product.name">
@@ -21,7 +21,7 @@
                         <input id="characteristic" name="characteristic" max="255" class="form-control" v-model="product.characteristic"/>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Update Product</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Add Product</button>
                     </div>
                 </form>
             </div>
@@ -36,17 +36,10 @@
                 product: {}
             }
         },
-        created() {
-            axios
-                .get(`http://localhost:8000/api/items/${this.$route.params.id}`)
-                .then((response) => {
-                    this.product = response.data;
-                });
-        },
         methods: {
-            updateProduct() {
+            addProduct() {
                 axios
-                    .put(`http://localhost:8000/api/items/${this.$route.params.id}`, this.product)
+                    .post(`http://localhost:8000/api/items`, this.product)
                     .then((response) => {
                         this.$router.push({name: 'home'});
                     });
